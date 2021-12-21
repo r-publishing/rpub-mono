@@ -14,17 +14,37 @@ It contains the following apps and packages:
 
 ## Installation and building
 
-First you need to install NodeJS, we recommend that you use NVM (Node Version Manager). You can find instruction for [Linux](https://github.com/nvm-sh/nvm) as well as [Windows](https://github.com/coreybutler/nvm-windows)
-Next you'll need to install Node v16 through nvm, we recommend v16.13.x .
-Once you have confirmed that you have node installed (run node -v in your terminal), you can continue.
-Now you want to install [Yarn](https://classic.yarnpkg.com/lang/en/docs/install)
+* First you need to install NodeJS, we recommend that you use NVM (Node Version Manager). You can find instruction for [Linux](https://github.com/nvm-sh/nvm) as well as [Windows](https://github.com/coreybutler/nvm-windows)
 
-Now that you have all the prerequisites, go ahead and clone this repo and run "yarn" to install dependencies:
+***Note:*** If you're developing on Windows, we recommend using WSL2 instead with Ubuntu 20.04.
+* Next you'll need to install Node v16 through nvm, we recommend v16.13.x .
+* Once you have confirmed that you have node installed (run node -v in your terminal), you can continue.
+* Now you want to install [Yarn](https://classic.yarnpkg.com/lang/en/docs/install)
+
+* Make sure to download patched nodejs binaries for the version you're targetting (in our case v16) and copy them to ~/.pkg-cache/v2.6 like so:
+
+```bash
+wget https://github.com/vercel/pkg-fetch/releases/download/v3.2/node-v16.13.0-linux-x64 -O fetched-v16.13.0-linux-x64
+sudo mv fetched-v16.13.0-linux-x64 ~/.pkg-cache/v2.6
+
+wget https://github.com/vercel/pkg-fetch/releases/download/v3.2/node-v16.13.0-macos-x64 -O fetched-v16.13.0-macos-x64
+sudo mv fetched-v16.13.0-macos-x64 ~/.pkg-cache/v2.6
+
+wget https://github.com/vercel/pkg-fetch/releases/download/v3.2/node-v16.13.0-win-x64 -O fetched-v16.13.0-win-x64
+sudo mv fetched-v16.13.0-win-x64 ~/.pkg-cache/v2.6
+```
+
+
+***Note:*** Make sure to only target even versions of nodejs, as the patching process is not compatible with odd versions.
+
+
+* Now that you have all the prerequisites, go ahead and clone this repo and run "yarn" to install dependencies:
 ```bash
 git clone --recurse-submodules -j4 "https://github.com/r-publishing/rpub-mono.git"
 cd rpub-mono
 yarn
 ```
+
 
 ### Development
 
@@ -49,7 +69,9 @@ Once you run "yarn build", which can take quite a bit of time at first, you'll s
 - /apps/rpub-app/public containing the app bundle that can be run in the browser. To build mobile apps, go to #Capacitor
 - /apps/rpub-web/dist containing the bundled homepage.
 
-### Build for mobile
+***Note:*** You might see a few errors and warnings, at least at this early stage of development, but shouldn't impact the releases from being built.
+
+### Build for mobile (coming soon)
 
 To build all apps for Android and (#soon) iOS, we recommend using AppFlow, but you can easily build for Android if you have Android SDK installed.
 If you have Android SDK installed, you can run the following command:
