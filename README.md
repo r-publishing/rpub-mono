@@ -21,7 +21,7 @@ Now you want to install [Yarn](https://classic.yarnpkg.com/lang/en/docs/install)
 
 Now that you have all the prerequisites, go ahead and clone this repo and run "yarn" to install dependencies:
 ```bash
-git clone "https://github.com/r-publishing/rpub.git"
+git clone --recurse-submodules -j4 "https://github.com/r-publishing/rpub.git"
 cd rpub
 yarn
 ```
