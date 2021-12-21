@@ -18,7 +18,13 @@ It contains the following apps and packages:
 
 ***Note:*** If you're developing on Windows, we recommend using WSL2 instead with Ubuntu 20.04.
 * Next you'll need to install Node v16 through nvm, we recommend v16.13.x .
-* Once you have confirmed that you have node installed (run node -v in your terminal), you can continue.
+
+```bash
+nvm install v16.13.1
+nvm use v16.13.1
+```
+
+* Once you have confirmed that you have node installed (run "node -v" in your terminal and make sure it's v16), you can continue.
 * Now you want to install [Yarn](https://classic.yarnpkg.com/lang/en/docs/install)
 
 * Make sure to download patched nodejs binaries for the version you're targetting (in our case v16) and copy them to ~/.pkg-cache/v2.6 like so:
