@@ -62,17 +62,6 @@ yarn
 ```
 
 
-### Development
-
-```bash
-yarn dev
-```
-
-For development all you have to do is to run "yarn dev" and it should start all the rpojects 
-- localhost:3000/rpub-web is for the homepage.
-- localhost:3030 is for the APIs as well as dashboard.
-- localhost:5000 is for the app.
-
 ### Building
 
 ```bash
@@ -96,6 +85,19 @@ npx cap sync android
 ```
 
 Then open the Android Studio project located in "android" folder and build the project as you normally would.
+
+
+
+### Development
+
+```bash
+yarn dev
+```
+
+For development all you have to do is to run "yarn dev" and it should start all the rpojects 
+- localhost:3000/rpub-web is for the homepage.
+- localhost:3030 is for the APIs as well as dashboard.
+- localhost:5000 is for the app.
 
 ## Todo
 
