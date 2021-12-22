@@ -8,11 +8,11 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev --parallel",
-    "lint": "turbo run lint",
-    "test": "turbo run test",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "build": "npx turbo run build",
+    "dev": "npx turbo run dev --parallel",
+    "lint": "npx turbo run lint",
+    "test": "npx turbo run test",
+    "format": "npx prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
     "prettier": "^2.5.1",
