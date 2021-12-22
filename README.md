@@ -15,9 +15,11 @@ It contains the following apps and packages:
 
 ## Installation and building
 
-* First you need to install NodeJS, we recommend that you use NVM (Node Version Manager). You can find instruction for [Linux](https://github.com/nvm-sh/nvm) as well as [Windows](https://github.com/coreybutler/nvm-windows)
+* First you need to install NodeJS, we recommend that you use NVM (Node Version Manager). You can find instruction for [Linux](https://github.com/nvm-sh/nvm) as well as [Windows](https://github.com/coreybutler/nvm-windows).
+Now follow the instructions to install nvm for Linux here: https://tecadmin.net/how-to-install-nvm-on-ubuntu-20-04/ (or for windows it's https://github.com/coreybutler/nvm-windows )
 
 ***Note:*** If you're developing on Windows, we recommend using WSL2 instead with Ubuntu 20.04.
+
 * Next you'll need to install Node v16 through nvm, we recommend v16.13.x .
 
 ```bash
