@@ -6,6 +6,7 @@ It contains the following apps and packages:
 - /apps/rpub-web  (Homepage built with Astro framework)
 - /apps/rpub-api  (APIs and dashboard using Keystone6)
 - /apps/rpub-app  (app built with vue+svelte+ionic+capacitor)
+- /deps/pika-plugin-pkg-node  (Used by rpub-exe to bundle nodejs applications to standalone executables)
 - /packages/keystone-core  (for of Keystone6)
 - /packages/rchain-did-resolver  (for resolving public did documents on RChain that start with did:rchain:...)
 - /packages/rchain-token
@@ -27,9 +28,16 @@ nvm use v16.13.1
 * Once you have confirmed that you have node installed (run "node -v" in your terminal and make sure it's v16), you can continue.
 * Now you want to install [Yarn](https://classic.yarnpkg.com/lang/en/docs/install)
 
+```bash
+npm install --global yarn
+```
+
 * Make sure to download patched nodejs binaries for the version you're targetting (in our case v16) and copy them to ~/.pkg-cache/v2.6 like so:
 
 ```bash
+mkdir ~/.pkg-cache
+mkdir ~/.pkg-cache/v2.6
+
 wget https://github.com/vercel/pkg-fetch/releases/download/v3.2/node-v16.13.0-linux-x64 -O fetched-v16.13.0-linux-x64
 sudo mv fetched-v16.13.0-linux-x64 ~/.pkg-cache/v2.6
 
