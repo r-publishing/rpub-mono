@@ -1,31 +1,31 @@
 [submodule "apps/rpub-web"]
 	path = apps/rpub-web
-	url = https://github.com/r-publishing/rpub-web.git
+	url = git@github.com:r-publishing/rpub-web.git
 [submodule "apps/rpub-api"]
 	path = apps/rpub-api
-	url = https://github.com/r-publishing/rpub-api.git
+	url = git@github.com:r-publishing/rpub-api.git
 [submodule "apps/rpub-app"]
 	path = apps/rpub-app
-	url = https://github.com/r-publishing/rpub-app.git
+	url = git@github.com:r-publishing/rpub-app.git
 [submodule "apps/rpub-exe"]
 	path = apps/rpub-exe
-	url = https://github.com/r-publishing/rpub-exe.git
+	url = git@github.com:r-publishing/rpub-exe.git
 [submodule "deps/pika-plugin-pkg-node"]
 	path = deps/pika-plugin-pkg-node
-	url = https://github.com/TheoXD/pika-plugin-pkg-node.git
+	url = git@github.com:TheoXD/pika-plugin-pkg-node.git
 [submodule "packages/rchain-toolkit"]
 	path = packages/rchain-toolkit
-	url = https://github.com/r-publishing/rchain-toolkit.git
+	url = git@github.com:r-publishing/rchain-toolkit.git
 [submodule "packages/rchain-token"]
 	path = packages/rchain-token
-	url = https://github.com/r-publishing/rchain-token.git
+	url = git@github.com:r-publishing/rchain-token.git
 [submodule "packages/keystone-core"]
 	path = packages/keystone-core
-	url = https://github.com/r-publishing/keystone-core.git
+	url = git@github.com:r-publishing/keystone-core.git
 [submodule "packages/rchain-did-resolver"]
 	path = packages/rchain-did-resolver
-	url = https://github.com/r-publishing/rchain-did-resolver.git
+	url = git@github.com:r-publishing/rchain-did-resolver.git
 [submodule "packages/js-did"]
 	path = packages/js-did
-	url = https://github.com/TheoXD/js-did.git
+	url = git@github.com:TheoXD/js-did.git
 	branch = did_createJWE
