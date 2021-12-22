@@ -56,7 +56,15 @@ sudo mv fetched-v16.13.0-win-x64 ~/.pkg-cache/v2.6
 
 * Now that you have all the prerequisites, go ahead and clone this repo and run "yarn" to install dependencies:
 ```bash
-git clone --recurse-submodules -j4 "https://github.com/r-publishing/rpub-mono.git"
+git clone --recurse-submodules -j4 https://github.com/r-publishing/rpub-mono.git
+cd rpub-mono
+yarn
+```
+
+Alternatively you can clone using SSH if you have already setup public key authentication on Github:
+
+```bash
+git clone --recurse-submodules -j4 git@github.com:r-publishing/rpub-mono.git
 cd rpub-mono
 yarn
 ```
