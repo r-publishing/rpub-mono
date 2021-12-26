@@ -50,6 +50,11 @@ wget https://github.com/vercel/pkg-fetch/releases/download/v3.2/node-v16.13.0-wi
 sudo mv fetched-v16.13.0-win-x64 ~/.pkg-cache/v2.6
 ```
 
+* Also you'll need libfuse-dev package installed, you can do so by running:
+
+```bash
+sudo apt-get install libfuse-dev
+```
 
 ***Note:*** Make sure to only target even versions of nodejs, as the patching process is not compatible with odd versions.
 
