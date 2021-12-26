@@ -56,7 +56,7 @@ sudo mv fetched-v16.13.0-win-x64 ~/.pkg-cache/v2.6
 
 * Now that you have all the prerequisites, go ahead and clone this repo and run "yarn" to install dependencies:
 ```bash
-git clone --recurse-submodules -j4 https://github.com/r-publishing/rpub-mono.git
+git clone --recurse-submodules https://github.com/r-publishing/rpub-mono.git
 cd rpub-mono
 yarn
 ```
@@ -64,7 +64,7 @@ yarn
 Alternatively you can clone using SSH if you have already setup public key authentication on Github:
 
 ```bash
-git clone --recurse-submodules -j4 git@github.com:r-publishing/rpub-mono.git
+git clone --recurse-submodules -j4 git@github.com:/r-publishing/rpub-mono.git
 cd rpub-mono
 yarn
 ```
@@ -102,7 +102,7 @@ Then open the Android Studio project located in "android" folder and build the p
 yarn dev
 ```
 
-For development all you have to do is to run "yarn dev" and it should start all the rpojects 
+For development all you have to do is to run "yarn dev" and it should start all the rpojects
 - localhost:3000/rpub-web is for the homepage.
 - localhost:3030 is for the APIs as well as dashboard.
 - localhost:5000 is for the app.
@@ -112,4 +112,3 @@ For development all you have to do is to run "yarn dev" and it should start all 
 - Move artifacts to the root of the monorepo.
 - Properly configure ESLint, Prettier and Jest for all projects
 - Create unit tests for the rest of the projects
-
