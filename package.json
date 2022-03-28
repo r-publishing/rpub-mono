@@ -41,5 +41,8 @@
         "cache": false
       }
     }
+  },
+  "dependencies": {
+    "pkg": "5.2.0"
   }
 }
