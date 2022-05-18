@@ -32,3 +32,6 @@
 	path = packages/js-did
 	url = git@github.com:TheoXD/js-did.git
 	branch = did_createJWE
+[submodule "apps/rpub-cli"]
+	path = apps/rpub-cli
+	url = git@github.com:r-publishing/rpub-cli.git
