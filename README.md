@@ -7,7 +7,7 @@ It contains the following apps and packages:
 - /apps/rpub-api  (APIs and dashboard using Keystone6)
 - /apps/rpub-bot  (Discord bot to monitor mainnet)
 - /apps/rpub-app  (app built with vue+svelte+ionic+capacitor)
-- /apps/rpub-bot  (A command line utility to interact with an RChain based blockchain)
+- /apps/rpub-cli (A command line utility to interact with an RChain based blockchain)
 - /deps/pika-plugin-pkg-node  (Used by rpub-exe to bundle nodejs applications to standalone executables)
 - /packages/keystone-core  (for of Keystone6)
 - /packages/rchain-did-resolver  (for resolving public did documents on RChain that start with did:rchain:...)
