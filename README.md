@@ -5,6 +5,7 @@ It contains the following apps and packages:
 - /apps/rpub-exe  (For standalone desktop applications, written in Node)
 - /apps/rpub-web  (Homepage built with Astro framework)
 - /apps/rpub-api  (APIs and dashboard using Keystone6)
+- /apps/rpub-bot  (Discord bot to monitor mainnet)
 - /apps/rpub-app  (app built with vue+svelte+ionic+capacitor)
 - /deps/pika-plugin-pkg-node  (Used by rpub-exe to bundle nodejs applications to standalone executables)
 - /packages/keystone-core  (for of Keystone6)
