@@ -10,6 +10,9 @@
 [submodule "apps/rpub-exe"]
 	path = apps/rpub-exe
 	url = git@github.com:r-publishing/rpub-exe.git
+[submodule "apps/rpub-bot"]
+	path = apps/rpub-bot
+	url = git@github.com:r-publishing/rpub-bot.git
 [submodule "deps/pika-plugin-pkg-node"]
 	path = deps/pika-plugin-pkg-node
 	url = git@github.com:TheoXD/pika-plugin-pkg-node.git
